@@ -10,8 +10,14 @@ function reboot() {
     setTimeout(() => {document.body.innerHTML += '<br>The programs included with the simpansoftware linux system are free software;';}, 7500);
     setTimeout(() => {document.body.innerHTML += '<br>the exact distribution terms for each program are not described in the';}, 7500);
     setTimeout(() => {document.body.innerHTML += '<br>individual files in /usr/share/doc/*/copyright (i didnt bother adding a real shell)';}, 7500);
-    setTimeout(() => {document.body.innerHTML += '<br>root@simpansoftware:~# ';}, 8000);
-    setTimeout(() => {document.title = "Portfolio";}, 8000);
+    setTimeout(() => {document.body.innerHTML += '<br><span id="prompt">root@simpansoftware:~#</span>';}, 8000);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# s";}, 9500);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# st";}, 9600);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# sta";}, 9850);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# star";}, 10000);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# start";}, 10150);
+    setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# startx";}, 10300);
+    setTimeout(() => {document.title = "Portfolio";}, 12000);
 }
 
 setTimeout(() => {
