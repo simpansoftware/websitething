@@ -17,7 +17,17 @@ function reboot() {
     setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# star";}, 10000);
     setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# start";}, 10150);
     setTimeout(() => {document.getElementById("prompt").textContent = "root@simpansoftware:~# startx";}, 10300);
-    setTimeout(() => {document.title = "Portfolio";}, 12000);
+    setTimeout(() => {kpanic()}, 12000);
+}
+
+function kpanic() {
+    fetch("portfolio.html")
+        .then(response => response.text())
+        .then(newhtml =>{
+            document.documentElement.innerHTML = newhtml;
+            document.title = "Portfolio";
+            console.log("thy portfolio happened")
+        })
 }
 
 setTimeout(() => {
