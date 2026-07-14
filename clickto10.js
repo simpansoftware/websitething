@@ -31,11 +31,11 @@ function ten() {
     kpanic();
 }
 
-document.getElementById("gamething").style.display = "none"
-document.getElementById("splash").style.display = "block"
-
-setTimeout(() => {
-    document.getElementById("splash").style.display = "none"
-    document.getElementById("gamething").style.display = "block"
-    document.addEventListener("click", handleClick)
-}, 2000);
+window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("gamething").style.display = "none"
+    setTimeout(() => {
+        document.getElementById("splash").style.display = "none"
+        document.getElementById("gamething").style.display = "block"
+        document.addEventListener("click", handleClick)
+    }, 2000);
+});
