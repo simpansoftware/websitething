@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Terminus";
+    src: url("terminus.ttf") format("truetype");
+}
+
+.crashbody {
+    background-color: blue;
+    font-family: "Terminus", monospace;
+    overflow: hidden;
+}
+
+.funnypenguin {
+    color: white;
+    white-space: pre;
+    position: absolute;
+    margin-top: 0;
+}
+
+.errortext {
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+}
+
+.rantcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rant {
+    position: relative;
+    margin-top: 10vh;
+    max-width: 95%;
+    width: 65vh;
+    height: auto;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .rant {
+        margin-top: 173px;
+    }
+}
