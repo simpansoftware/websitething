@@ -2,6 +2,7 @@ body {
     background-color: #a3a3a3;
     color: #1f1f1f;
     font: Arial;
+    margin: 0;
 }
 
 .counter {
@@ -21,4 +22,16 @@ body {
     right: 0;
     text-align: center;
     color: gray;
+}
+
+.splash {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #231f20;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
 }

@@ -31,4 +31,11 @@ function ten() {
     kpanic();
 }
 
-document.addEventListener("click", handleClick)
+document.getElementById("gamething").style.display = "none"
+document.getElementById("splash").style.display = "block"
+
+setTimeout(() => {
+    document.getElementById("splash").style.display = "none"
+    document.getElementById("gamething").style.display = "block"
+    document.addEventListener("click", handleClick)
+}, 2000);
