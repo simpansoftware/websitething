@@ -3,14 +3,14 @@
     src: url("terminus.ttf") format("truetype");
 }
 
-.crashbody {
+body {
     background-color: blue;
     font-family: "Terminus", monospace;
     overflow: hidden;
+    color: white;
 }
 
 .funnypenguin {
-    color: white;
     white-space: pre;
     position: absolute;
     margin-top: 0;
@@ -19,7 +19,7 @@
 .errortext {
     text-align: center;
     margin-top: 5vh;
-    color: white;
+
 }
 
 .rantcontainer {
@@ -37,6 +37,6 @@
 
 @media (max-aspect-ratio: 4/3) {
     .rant {
-        margin-top: 173px;
+        margin-top: 173px; /* why 173px you may ask? its the height of the linux penguin text + 20px of padding */
     }
 }

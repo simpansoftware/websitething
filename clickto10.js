@@ -6,7 +6,7 @@ function handleClick() {
     if (value !== 0) {
         thing.style.display = "none";
     }
-    if (value === 10) {
+    if (value === 9) { // i messed up big time with the code sorting and im too lazy so heres a bandaid be happy
         ten();
     }
     value++;
@@ -18,6 +18,10 @@ function kpanic() {
         .then(response => response.text())
         .then(newhtml =>{
             document.documentElement.innerHTML = newhtml;
+
+            const script = document.createElement("script")
+            script.src = "kpanic.js"
+            document.body.appendChild(script)
             console.log("thy bsod happened")
         })
 }
