@@ -56,5 +56,9 @@ function kpanic() {
 
 setTimeout(() => {
     bg.style.backgroundColor = "black"
+    document.body.innerHTML = '';
+}, 5000);
+
+setTimeout(() => {
     reboot()
-}, 2000);
+}, 6500);

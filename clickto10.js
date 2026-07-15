@@ -3,11 +3,13 @@ const counter = document.getElementById("counter")
 function handleClick() {
     let value = parseInt(counter.textContent);
     let thing = document.getElementById("thing");
+    if (value === 0) {
+        document.documentElement.requestFullscreen(); 
+    }
     if (value !== 0) {
         thing.style.display = "none";
     }
     if (value === 9) {// i messed up big time with the code sorting and im too lazy so heres a bandaid be happy
-        document.documentElement.requestFullscreen(); 
         ten();
     }
     value++;
