@@ -92,3 +92,10 @@ body {
     background-color: red;
     border-radius: 20vh;
 }
+
+@media (max-aspect-ratio: 4/3) {
+    #button {
+        height: 15vw;
+        width: 15vw;
+    }
+}
