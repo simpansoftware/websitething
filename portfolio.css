@@ -5,8 +5,9 @@
 
 body {
     background-repeat: no-repeat;
-    background-position: cover;
-    background-image: url("3840x2160.svg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
     font-family: "Inter";
     display: flex;
     justify-content: center;
@@ -16,22 +17,31 @@ body {
     margin: 0;
 }
 
+:root {
+    --gap: clamp(8px, 1vw, 20px);
+    --padding: clamp(10px, 1vw, 20px);
+}
+
 .appcontainer {
     display: grid;
-    gap: 16px;
+    gap: var(--gap);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     box-sizing: border-box;
     height: 90vh;
-    width: 90vw;
+    width: 80vw;
+    overflow: auto;
+    padding: 50px;
 }
 
-.app1, .app2 {
-    border: 2px solid black;
+.app1, .app2, .app3, .app4, .app5, .app6 {
+    border: 2px dashed white;
     z-index: 1;
-    background-color: #1e1e2e;
-    padding: 10px;
+    padding: var(--padding);
+    min-width: 0;
+    min-height: 0;
     color: #cdd6f4;
+    font-size: clamp(0.7rem, 1.5vmin, 5rem);
 }
 
 .app1text {
@@ -42,7 +52,36 @@ body {
     border-radius: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 20vh;
-    border: solid 4px #181825;
+    width: clamp(50px, 8vw, 180px);
+    border: dashed 2px white;
     display: block;
+}
+
+.app1 {
+    transform: translate(-10px, -10px);
+}
+
+.app2 {
+    transform: translate(15px, 5px);
+}
+
+.app3 {
+    transform: translate(5px, -5px);
+}
+
+.app4 {
+    transform: translate(-15px, 5px);
+}
+
+.app5 {
+    transform: translate(10px, 20px);
+}
+
+.app6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5vh;
+    margin-right: 2.5vw;
+    text-align: center;
 }
