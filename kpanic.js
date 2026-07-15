@@ -21,7 +21,7 @@ function reboot() {
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Broke someones brain by brute force';}, 5050);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Continued to trash on andesite as a building block in MC';}, 5400);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Fled from a donkey (it was colorblind and had a friend who was an ogre)';}, 5700);
-    setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Got rid rid of BonziBuddy';}, 6100);
+    setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Got rid of BonziBuddy';}, 6100);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Prevented site against XSS';}, 6300);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Starting portfolio service';}, 6700);
     setTimeout(() => {document.body.innerHTML += '<br>';}, 7500);
