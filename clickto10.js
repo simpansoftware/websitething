@@ -51,6 +51,7 @@ function skipahead() {
 function proceed() {
     window.addEventListener("DOMContentLoaded", () => {
         document.getElementById("gamething").style.display = "none"
+        document.getElementById("splashtext").classList.add("splashtext")
         setTimeout(() => {
             document.getElementById("splash").style.display = "none"
             document.getElementById("gamething").style.display = "block"
