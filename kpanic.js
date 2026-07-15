@@ -10,7 +10,7 @@ function reboot() {
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Did absolutely nothing and just laid in bed';}, 1800);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Gave my friend a plane from the Macondo shop';}, 2100);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Ran away from said plane';}, 2200);
-    setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Teached friend HTML and failing really really badly';}, 2800);
+    setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Taught friend HTML and failing really really badly';}, 2800);
     setTimeout(() => {document.body.innerHTML += '<br>[ &nbsp;<span style="color: #00ff00;">OK</span> &nbsp;] Went outsite because I had nothing better to do';}, 3200);
     setTimeout(() => {document.body.innerHTML += "<br>[ &nbsp;<span style='color: #00ff00;'>OK</span> &nbsp;] Going on a trip somewhere because it's summer break";}, 3600);
     setTimeout(() => {document.body.innerHTML += '<br>[<span style="color: #ff0000;">FAILED</span>] Being good at JS';}, 3800);

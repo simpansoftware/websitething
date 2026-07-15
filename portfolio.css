@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Inter";
+    src: url("inter.ttf") format("truetype");
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-image: url("3840x2160.svg");
+    font-family: "Inter";
+}
+
+.app2 {
+    max-height: 250px;
+    max-width: 300px;
+    position: absolute;
+    margin-left: 350px;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #1e1e2e;
+    padding: 10px;
+    color: #cdd6f4;
+}
+
+.app1 {
+    max-height: 250px;
+    max-width: 300px;
+    position: absolute;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #1e1e2e;
+    padding: 10px;
+    color: #cdd6f4;
+}
+
+.app1text {
+    text-align: center;
+}
+
+.myimage {
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96px;
+    border: solid 4px #181825;
+    display: block;
+}
