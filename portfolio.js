@@ -6,3 +6,5 @@ button.addEventListener("click", () => {
     alert("Have fun!")
     location.reload();
 })
+
+localStorage.setItem("wentthruthing", "bean");
