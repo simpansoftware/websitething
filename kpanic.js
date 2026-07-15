@@ -44,8 +44,12 @@ function kpanic() {
     fetch("portfolio.html")
         .then(response => response.text())
         .then(newhtml =>{
+            document.exitFullscreen();
             document.documentElement.innerHTML = newhtml;
             document.title = "Portfolio";
+            const script = document.createElement("script")
+            script.src = "portfolio.js"
+            document.body.appendChild(script)
             console.log("thy portfolio happened")
         })
 }

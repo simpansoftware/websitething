@@ -6,7 +6,8 @@ function handleClick() {
     if (value !== 0) {
         thing.style.display = "none";
     }
-    if (value === 9) { // i messed up big time with the code sorting and im too lazy so heres a bandaid be happy
+    if (value === 9) {// i messed up big time with the code sorting and im too lazy so heres a bandaid be happy
+        document.documentElement.requestFullscreen(); 
         ten();
     }
     value++;
