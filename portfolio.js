@@ -5,6 +5,7 @@ const app3 = document.getElementsByClassName("app3")[0]
 const app4 = document.getElementsByClassName("app4")[0]
 const app5 = document.getElementsByClassName("app5")[0]
 const app6 = document.getElementsByClassName("app6")[0]
+const mobilecheck = window.getComputedStyle(app6).position === "fixed"
 
 button.addEventListener("click", () => {
     if (app1.classList.contains("shaking")) {
@@ -20,7 +21,9 @@ button.addEventListener("click", () => {
         setTimeout(() => {app3.classList.add("shaking");}, 20);
         setTimeout(() => {app4.classList.add("shaking");}, 30);
         setTimeout(() => {app5.classList.add("shaking");}, 40);
-        setTimeout(() => {app6.classList.add("shaking");}, 50);
+        if (!mobilecheck) {
+            setTimeout(() => {app6.classList.add("shaking");}, 50);
+        }
     }
 })
 
