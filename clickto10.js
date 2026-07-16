@@ -50,8 +50,8 @@ function skipahead() {
 
 function proceed() {
     window.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("gamething").style.display = "none"
         document.getElementById("splashtext").classList.add("splashtext")
+        document.getElementById("gamething").style.display = "none"
         setTimeout(() => {
             document.getElementById("splash").style.display = "none"
             document.getElementById("gamething").style.display = "block"
