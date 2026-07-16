@@ -130,6 +130,7 @@ body {
         left: 0;
         margin-bottom: 0;
         margin-left: 0;
+        margin-right: 0;
         background-color: black;
     }
 }
@@ -154,4 +155,19 @@ body {
 
 .shaking {
     animation: shake 0.1s infinite;
+}
+
+a:visited {
+    color: rgb(173, 165, 223);
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(173, 165, 223);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(173, 165, 223);
+    text-shadow: 0 0 5px rgb(173, 165, 223);;
 }
